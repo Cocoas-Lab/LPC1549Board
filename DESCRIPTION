@@ -1,0 +1,8 @@
+LPC1549 Development Board
+<ul>
+<li>3.3[V] or 5V 5[V] Single Supply Voltage</li>
+<li>USB Bus Power</li>
+<li>Flash Firmwere via vCOM Port</li>
+<li>On Board 3 LEDs & 1 Switch</li>
+<li>USB Short Circuit Protection</li>
+<li>22 GPIOs</li>
