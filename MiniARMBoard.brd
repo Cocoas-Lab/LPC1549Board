@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.127" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -52,10 +52,10 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -150,8 +150,8 @@
 <wire x1="38.227" y1="23.114" x2="0" y2="23.114" width="0" layer="20"/>
 <wire x1="0" y1="23.114" x2="0" y2="0" width="0" layer="20"/>
 <text x="35.56" y="5.08" size="1.27" layer="51" rot="R90">@Cocoa3128</text>
-<dimension x1="0" y1="0" x2="0" y2="23.114" x3="-0.762" y3="11.557" textsize="1.4224" layer="51" unit="inch" visible="yes"/>
-<dimension x1="0" y1="23.114" x2="38.227" y2="23.114" x3="19.1135" y3="25.146" textsize="1.4224" layer="51" unit="inch" visible="yes"/>
+<dimension x1="0" y1="0" x2="0" y2="23.114" x3="-0.762" y3="11.557" textsize="1.4224" layer="47" unit="inch" visible="yes"/>
+<dimension x1="0" y1="23.114" x2="38.227" y2="23.114" x3="19.1135" y3="25.146" textsize="1.4224" layer="47" unit="inch" visible="yes"/>
 <text x="8.4836" y="4.9276" size="0.8128" layer="51">!RST</text>
 <text x="9.3472" y="13.0556" size="0.8128" layer="51">!ISP</text>
 <text x="36.83" y="5.08" size="0.8128" layer="51" rot="R90">LPC1549 Dev.Board v1.0.0</text>
