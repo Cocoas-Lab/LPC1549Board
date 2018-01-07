@@ -1,6 +1,8 @@
-.*#*
 *.lck
 *.G*
 *.TXT
 MiniARMBoard.b#1
 *.dri
+*.zip
+*.lbr
+*.*#*
