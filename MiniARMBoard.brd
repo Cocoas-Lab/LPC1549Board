@@ -143,7 +143,7 @@
 <layer number="255" name="Accent" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjNiMmRh" projecturn="a.cGVyc29uYWw6dWUyYjNiMmRhIzIwMTcwOTA2OTEzNTYzODE" f3durn="urn:adsk.wipprod:dm.lineage:c0W8xedyRbuGZVUMAzLKlw" pcbguid="f3241c00-d087-4646-82b8-02203da92fc5" lastpulledtime="" lastsyncedchangeguid="cd9ad336-f5ed-6853-9b26-b4e340852372"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjNiMmRh" projecturn="a.cGVyc29uYWw6dWUyYjNiMmRhIzIwMTcwOTA2OTEzNTYzODE" f3durn="urn:adsk.wipprod:dm.lineage:c0W8xedyRbuGZVUMAzLKlw" pcbguid="f3241c00-d087-4646-82b8-02203da92fc5" lastpulledtime="" lastsyncedchangeguid="fd83c280-f506-58d5-970b-5d71b43aab4c"/>
 <plain>
 <wire x1="0" y1="0" x2="35.56" y2="0" width="0" layer="20"/>
 <wire x1="35.56" y1="0" x2="35.56" y2="20.574" width="0" layer="20"/>
