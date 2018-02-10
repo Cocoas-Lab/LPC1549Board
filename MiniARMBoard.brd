@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.4.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -149,12 +149,12 @@
 <wire x1="35.56" y1="0" x2="35.56" y2="20.574" width="0" layer="20"/>
 <wire x1="35.56" y1="20.574" x2="0" y2="20.574" width="0" layer="20"/>
 <wire x1="0" y1="20.574" x2="0" y2="0" width="0" layer="20"/>
-<text x="33.782" y="3.81" size="1.27" layer="25" rot="R90">@Cocoa3128</text>
+<text x="33.909" y="4.064" size="1.27" layer="25" rot="R90">@Cocoa3128</text>
 <dimension x1="0" y1="0" x2="0" y2="20.574" x3="-0.762" y3="10.287" textsize="1.4224" layer="47" visible="yes"/>
 <dimension x1="0" y1="20.574" x2="35.56" y2="20.574" x3="17.78" y3="22.606003125" textsize="1.4224" layer="47" visible="yes"/>
 <text x="8.4836" y="3.6576" size="0.8128" layer="51">!RST</text>
 <text x="9.3472" y="11.7856" size="0.8128" layer="51">!ISP</text>
-<text x="35.179" y="3.81" size="0.8128" layer="25" rot="R90">LPC1549 Dev.Board v1.1.0</text>
+<text x="35.179" y="2.54" size="0.8128" layer="25" rot="R90">LPC1549 Dev.Board v1.1.0</text>
 </plain>
 <libraries>
 <library name="MotorDriver" urn="urn:adsk.eagle:library:1073580">
