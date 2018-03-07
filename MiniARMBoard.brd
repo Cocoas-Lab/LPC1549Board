@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.3">
+<eagle version="8.6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -674,6 +674,7 @@ design rules under a new name.</description>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
 <param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -806,7 +807,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="16.7308" y="16.1694" size="0.8128" layer="25" font="vector" ratio="18"/>
 <attribute name="VALUE" x="16.7308" y="14.1194" size="0.8" layer="27" font="vector" ratio="18"/>
 </element>
-<element name="CN1" library="j_usb_hirose_zx62-ab-5pa" library_urn="urn:adsk.eagle:library:1080482" package="J_USB_MICROAB_HIROSE_ZX62-AB-5PA" package3d_urn="urn:adsk.eagle:package:1080486/2" value="J_USB_MICROAB_HIROSE_ZX62-AB-5PA" x="0.127" y="10.16" smashed="yes" rot="R270">
+<element name="CN1" library="j_usb_hirose_zx62-ab-5pa" library_urn="urn:adsk.eagle:library:1080482" package="J_USB_MICROAB_HIROSE_ZX62-AB-5PA" package3d_urn="urn:adsk.eagle:package:1080486/2" value="ZX62-AB-5PA" x="0.127" y="10.16" smashed="yes" rot="R270">
 <attribute name="NAME" x="2.6966" y="5.0746" size="0.8128" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="5.247" y="9.775" size="1.016" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
