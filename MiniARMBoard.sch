@@ -1417,7 +1417,7 @@ Source: &lt;a href="https://support.epson.biz/td/api/doc_check.php?mode=dl&amp;l
 <library name="nonolith" urn="urn:adsk.eagle:library:1289076">
 <description>Nonolith Labs Eagle Library</description>
 <packages>
-<package name="1X14_ROUND" library_version="2" library_locally_modified="yes">
+<package name="1X14_ROUND" urn="urn:adsk.eagle:footprint:2515368/1" library_version="7">
 <wire x1="-17.78" y1="0.635" x2="-17.78" y2="-0.635" width="0.1524" layer="51"/>
 <pad name="1" x="-16.51" y="0" drill="1" diameter="1.6764" rot="R90"/>
 <pad name="2" x="-13.97" y="0" drill="1" diameter="1.6764" rot="R90"/>
@@ -1432,6 +1432,7 @@ Source: &lt;a href="https://support.epson.biz/td/api/doc_check.php?mode=dl&amp;l
 <pad name="11" x="8.89" y="0" drill="1" diameter="1.6764" rot="R90"/>
 <pad name="12" x="11.43" y="0" drill="1" diameter="1.6764" rot="R90"/>
 <pad name="13" x="13.97" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="14" x="16.51" y="0" drill="1" diameter="1.6764" rot="R90"/>
 <text x="-15.3162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-15.24" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
@@ -1447,12 +1448,18 @@ Source: &lt;a href="https://support.epson.biz/td/api/doc_check.php?mode=dl&amp;l
 <rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
 <rectangle x1="11.176" y1="-0.254" x2="11.684" y2="0.254" layer="51"/>
 <rectangle x1="13.716" y1="-0.254" x2="14.224" y2="0.254" layer="51"/>
-<pad name="14" x="16.51" y="0" drill="1" diameter="1.6764" rot="R90"/>
 <rectangle x1="16.256" y1="-0.254" x2="16.764" y2="0.254" layer="51"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="1X14_ROUND" urn="urn:adsk.eagle:package:2515378/3" type="model" library_version="7">
+<packageinstances>
+<packageinstance name="1X14_ROUND"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="PINHD14" library_version="2" library_locally_modified="yes">
+<symbol name="PINHD14" urn="urn:adsk.eagle:symbol:2515367/1" library_version="7">
 <wire x1="-6.35" y1="-20.32" x2="1.27" y2="-20.32" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-20.32" x2="1.27" y2="17.78" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="17.78" x2="-6.35" y2="17.78" width="0.4064" layer="94"/>
@@ -1476,7 +1483,7 @@ Source: &lt;a href="https://support.epson.biz/td/api/doc_check.php?mode=dl&amp;l
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="HEADER1X14" library_version="2" library_locally_modified="yes">
+<deviceset name="HEADER1X14" urn="urn:adsk.eagle:component:2515379/4" library_version="7">
 <gates>
 <gate name="A" symbol="PINHD14" x="0" y="2.54"/>
 </gates>
@@ -1498,6 +1505,9 @@ Source: &lt;a href="https://support.epson.biz/td/api/doc_check.php?mode=dl&amp;l
 <connect gate="A" pin="8" pad="8"/>
 <connect gate="A" pin="9" pad="9"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2515378/3"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1688,8 +1698,8 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tpd4s014"&gt; Datasheet &lt;/a&gt;
 <part name="R10" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="10k"/>
 <part name="+3V8" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="+3V3" device=""/>
 <part name="+3V11" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="+3V3" device=""/>
-<part name="CN2" library="nonolith" library_urn="urn:adsk.eagle:library:1289076" deviceset="HEADER1X14" device=""/>
-<part name="CN3" library="nonolith" library_urn="urn:adsk.eagle:library:1289076" deviceset="HEADER1X14" device=""/>
+<part name="CN2" library="nonolith" library_urn="urn:adsk.eagle:library:1289076" deviceset="HEADER1X14" device="" package3d_urn="urn:adsk.eagle:package:2515378/3"/>
+<part name="CN3" library="nonolith" library_urn="urn:adsk.eagle:library:1289076" deviceset="HEADER1X14" device="" package3d_urn="urn:adsk.eagle:package:2515378/3"/>
 </parts>
 <sheets>
 <sheet>
