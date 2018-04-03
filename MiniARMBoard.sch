@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.3">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -148,13 +148,9 @@
 <description>Generated from &lt;b&gt;MotorDriver.sch&lt;/b&gt;&lt;p&gt;
 by exp-lbrs.ulp</description>
 <packages>
-<package name="QFP48" urn="urn:adsk.eagle:footprint:1073592/1" library_version="4">
+<package name="QFP48" urn="urn:adsk.eagle:footprint:1073592/1" locally_modified="yes" library_version="5" library_locally_modified="yes">
 <description>&lt;b&gt;SOT313-2 (LQFP48)&lt;/b&gt;&lt;br&gt;</description>
 <circle x="-4.7" y="3.5" radius="0.125" width="0.25" layer="25"/>
-<wire x1="-5.2" y1="5.2" x2="5.2" y2="5.2" width="0.05" layer="21"/>
-<wire x1="5.2" y1="5.2" x2="5.2" y2="-5.2" width="0.05" layer="21"/>
-<wire x1="5.2" y1="-5.2" x2="-5.2" y2="-5.2" width="0.05" layer="21"/>
-<wire x1="-5.2" y1="-5.2" x2="-5.2" y2="5.2" width="0.05" layer="21"/>
 <wire x1="-3.5" y1="3.5" x2="-3" y2="3.5" width="0.1" layer="51"/>
 <wire x1="-3" y1="3.5" x2="3.5" y2="3.5" width="0.1" layer="51"/>
 <wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.1" layer="51"/>
@@ -507,8 +503,11 @@ by exp-lbrs.ulp</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="QFP48" urn="urn:adsk.eagle:package:1073642/2" type="model" library_version="4">
+<package3d name="QFP48" urn="urn:adsk.eagle:package:1073642/2" locally_modified="yes" type="model" library_version="5" library_locally_modified="yes">
 <description>SOT313-2 (LQFP48)</description>
+<packageinstances>
+<packageinstance name="QFP48"/>
+</packageinstances>
 </package3d>
 <package3d name="SOT23-3" urn="urn:adsk.eagle:package:1073666/2" type="model" library_version="4">
 </package3d>
@@ -717,7 +716,7 @@ by exp-lbrs.ulp</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LPC1549JBD48" urn="urn:adsk.eagle:component:1073675/2" prefix="IC" library_version="5">
+<deviceset name="LPC1549JBD48" urn="urn:adsk.eagle:component:1073675/2" locally_modified="yes" prefix="IC" library_version="5" library_locally_modified="yes">
 <description>&lt;b&gt;NXP - LPC1549JBD48 - 32BIT MCU, CORTEX-M3, 72 MHZ, LQFP-48&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="http://www.farnell.com/datasheets/1963077.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -1418,24 +1417,23 @@ Source: &lt;a href="https://support.epson.biz/td/api/doc_check.php?mode=dl&amp;l
 <library name="nonolith" urn="urn:adsk.eagle:library:1289076">
 <description>Nonolith Labs Eagle Library</description>
 <packages>
-<package name="1X13_ROUND" urn="urn:adsk.eagle:footprint:1289224/1" library_version="2">
-<wire x1="-15.24" y1="0.635" x2="-15.24" y2="-0.635" width="0.1524" layer="51"/>
-<pad name="1" x="-13.97" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="2" x="-11.43" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="3" x="-8.89" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="4" x="-6.35" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="5" x="-3.81" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="6" x="-1.27" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="7" x="1.27" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="8" x="3.81" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="9" x="6.35" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="10" x="8.89" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="11" x="11.43" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="12" x="13.97" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="13" x="16.51" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<text x="-12.7762" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-12.7" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
+<package name="1X14_ROUND" library_version="2" library_locally_modified="yes">
+<wire x1="-17.78" y1="0.635" x2="-17.78" y2="-0.635" width="0.1524" layer="51"/>
+<pad name="1" x="-16.51" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="2" x="-13.97" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="3" x="-11.43" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="4" x="-8.89" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="5" x="-6.35" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="6" x="-3.81" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="7" x="-1.27" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="8" x="1.27" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="9" x="3.81" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="10" x="6.35" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="11" x="8.89" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="12" x="11.43" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="13" x="13.97" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<text x="-15.3162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-15.24" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
@@ -1444,24 +1442,23 @@ Source: &lt;a href="https://support.epson.biz/td/api/doc_check.php?mode=dl&amp;l
 <rectangle x1="-9.144" y1="-0.254" x2="-8.636" y2="0.254" layer="51"/>
 <rectangle x1="-11.684" y1="-0.254" x2="-11.176" y2="0.254" layer="51"/>
 <rectangle x1="-14.224" y1="-0.254" x2="-13.716" y2="0.254" layer="51"/>
+<rectangle x1="-16.764" y1="-0.254" x2="-16.256" y2="0.254" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
 <rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
 <rectangle x1="11.176" y1="-0.254" x2="11.684" y2="0.254" layer="51"/>
 <rectangle x1="13.716" y1="-0.254" x2="14.224" y2="0.254" layer="51"/>
+<pad name="14" x="16.51" y="0" drill="1" diameter="1.6764" rot="R90"/>
 <rectangle x1="16.256" y1="-0.254" x2="16.764" y2="0.254" layer="51"/>
 </package>
 </packages>
-<packages3d>
-<package3d name="1X13_ROUND" urn="urn:adsk.eagle:package:1289318/2" type="model" library_version="2">
-</package3d>
-</packages3d>
 <symbols>
-<symbol name="PINHD13" urn="urn:adsk.eagle:symbol:1289223/1" library_version="2">
-<wire x1="-6.35" y1="-17.78" x2="1.27" y2="-17.78" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-17.78" x2="1.27" y2="17.78" width="0.4064" layer="94"/>
+<symbol name="PINHD14" library_version="2" library_locally_modified="yes">
+<wire x1="-6.35" y1="-20.32" x2="1.27" y2="-20.32" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-20.32" x2="1.27" y2="17.78" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="17.78" x2="-6.35" y2="17.78" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="17.78" x2="-6.35" y2="-17.78" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="17.78" x2="-6.35" y2="-20.32" width="0.4064" layer="94"/>
 <text x="-6.35" y="18.415" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-6.35" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-2.54" y="15.24" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="2" x="-2.54" y="12.7" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="3" x="-2.54" y="10.16" visible="pad" length="short" direction="pas" function="dot"/>
@@ -1475,34 +1472,32 @@ Source: &lt;a href="https://support.epson.biz/td/api/doc_check.php?mode=dl&amp;l
 <pin name="11" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="12" x="-2.54" y="-12.7" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="13" x="-2.54" y="-15.24" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="14" x="-2.54" y="-17.78" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="HEADER-1X13" urn="urn:adsk.eagle:component:1289381/2" prefix="JP" uservalue="yes" library_version="2">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<deviceset name="HEADER1X14" library_version="2" library_locally_modified="yes">
 <gates>
-<gate name="G$1" symbol="PINHD13" x="2.54" y="5.08"/>
+<gate name="A" symbol="PINHD14" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="1X13_ROUND">
+<device name="" package="1X14_ROUND">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="11" pad="11"/>
-<connect gate="G$1" pin="12" pad="12"/>
-<connect gate="G$1" pin="13" pad="13"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="10" pad="10"/>
+<connect gate="A" pin="11" pad="11"/>
+<connect gate="A" pin="12" pad="12"/>
+<connect gate="A" pin="13" pad="13"/>
+<connect gate="A" pin="14" pad="14"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="6" pad="6"/>
+<connect gate="A" pin="7" pad="7"/>
+<connect gate="A" pin="8" pad="8"/>
+<connect gate="A" pin="9" pad="9"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:1289318/2"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1611,114 +1606,6 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tpd4s014"&gt; Datasheet &lt;/a&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="FT234XD-R" urn="urn:adsk.eagle:library:1437157">
-<description>&lt;USB/UART IC, w/USB Charge Detection FTDI Chip FT234XD-R, USB Controller, 3MBd, USB 1.1, USB 2.0, 5 V, 12-Pin DFN&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="SON45P300X300X75-13N" urn="urn:adsk.eagle:footprint:1437159/2" library_version="3">
-<description>&lt;b&gt;DFN-12A&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-1.45" y="1.125" dx="0.85" dy="0.25" layer="1"/>
-<smd name="2" x="-1.45" y="0.675" dx="0.85" dy="0.25" layer="1"/>
-<smd name="3" x="-1.45" y="0.225" dx="0.85" dy="0.25" layer="1"/>
-<smd name="4" x="-1.45" y="-0.225" dx="0.85" dy="0.25" layer="1"/>
-<smd name="5" x="-1.45" y="-0.675" dx="0.85" dy="0.25" layer="1"/>
-<smd name="6" x="-1.45" y="-1.125" dx="0.85" dy="0.25" layer="1"/>
-<smd name="7" x="1.45" y="-1.125" dx="0.85" dy="0.25" layer="1"/>
-<smd name="8" x="1.45" y="-0.675" dx="0.85" dy="0.25" layer="1"/>
-<smd name="9" x="1.45" y="-0.225" dx="0.85" dy="0.25" layer="1"/>
-<smd name="10" x="1.45" y="0.225" dx="0.85" dy="0.25" layer="1"/>
-<smd name="11" x="1.45" y="0.675" dx="0.85" dy="0.25" layer="1"/>
-<smd name="12" x="1.45" y="1.125" dx="0.85" dy="0.25" layer="1"/>
-<smd name="13" x="0" y="0" dx="2.55" dy="1.65" layer="1" rot="R90"/>
-<text x="0" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-2.125" y1="1.75" x2="2.125" y2="1.75" width="0.05" layer="21"/>
-<wire x1="2.125" y1="1.75" x2="2.125" y2="-1.75" width="0.05" layer="21"/>
-<wire x1="2.125" y1="-1.75" x2="-2.125" y2="-1.75" width="0.05" layer="21"/>
-<wire x1="-2.125" y1="-1.75" x2="-2.125" y2="1.75" width="0.05" layer="21"/>
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.1" layer="51"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.1" layer="51"/>
-<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.1" layer="51"/>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.1" layer="51"/>
-<wire x1="-1.5" y1="0.75" x2="-0.75" y2="1.5" width="0.1" layer="51"/>
-<circle x="-1.875" y="1.75" radius="0.125" width="0.25" layer="25"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="SON45P300X300X75-13N" urn="urn:adsk.eagle:package:1437160/3" type="model" library_version="3">
-<description>DFN-12A
-</description>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="FT234XD-R" urn="urn:adsk.eagle:symbol:1437158/2" library_version="3">
-<wire x1="5.08" y1="2.54" x2="30.48" y2="2.54" width="0.254" layer="94"/>
-<wire x1="30.48" y1="2.54" x2="30.48" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="30.48" y1="-17.78" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-17.78" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<text x="17.78" y="5.08" size="1.778" layer="95" align="center">&gt;NAME</text>
-<text x="17.78" y="-20.32" size="1.778" layer="96" align="center">&gt;VALUE</text>
-<pin name="USBDM" x="0" y="0" length="middle"/>
-<pin name="!RESET" x="0" y="-2.54" length="middle" direction="in"/>
-<pin name="3.3VOUT" x="0" y="-5.08" length="middle" direction="out"/>
-<pin name="VCC" x="0" y="-7.62" length="middle" direction="pwr"/>
-<pin name="GND" x="0" y="-10.16" length="middle" direction="pwr"/>
-<pin name="CBUS0" x="0" y="-12.7" length="middle"/>
-<pin name="TXD" x="0" y="-15.24" length="middle" direction="out"/>
-<pin name="USBDP" x="35.56" y="-2.54" length="middle" rot="R180"/>
-<pin name="!CTS" x="35.56" y="-5.08" length="middle" direction="in" rot="R180"/>
-<pin name="RXD" x="35.56" y="-7.62" length="middle" direction="in" rot="R180"/>
-<pin name="VCCIO" x="35.56" y="-10.16" length="middle" direction="pwr" rot="R180"/>
-<pin name="!RTS" x="35.56" y="-12.7" length="middle" direction="out" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FT234XD-R" urn="urn:adsk.eagle:component:1437161/3" prefix="IC" library_version="3">
-<description>&lt;b&gt;USB/UART IC, w/USB Charge Detection FTDI Chip FT234XD-R, USB Controller, 3MBd, USB 1.1, USB 2.0, 5 V, 12-Pin DFN&lt;/b&gt;&lt;p&gt;
-&lt;/b&gt;&lt;br&gt;&lt;a href="&lt;br&gt;&lt;a href="https://componentsearchengine.com/Images/3/FT234XD-R.jpg" title="Image"&gt;
-&lt;img src="https://componentsearchengine.com/Images/3/FT234XD-R.jpg" width="150"&gt;&lt;/a&gt;&lt;p&gt;
-Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="FT234XD-R" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SON45P300X300X75-13N">
-<connects>
-<connect gate="G$1" pin="!CTS" pad="11"/>
-<connect gate="G$1" pin="!RESET" pad="2"/>
-<connect gate="G$1" pin="!RTS" pad="8"/>
-<connect gate="G$1" pin="3.3VOUT" pad="3"/>
-<connect gate="G$1" pin="CBUS0" pad="6"/>
-<connect gate="G$1" pin="GND" pad="5 13"/>
-<connect gate="G$1" pin="RXD" pad="10"/>
-<connect gate="G$1" pin="TXD" pad="7"/>
-<connect gate="G$1" pin="USBDM" pad="1"/>
-<connect gate="G$1" pin="USBDP" pad="12"/>
-<connect gate="G$1" pin="VCC" pad="4"/>
-<connect gate="G$1" pin="VCCIO" pad="9"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:1437160/3"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="3D_PACKAGE" value="" constant="no"/>
-<attribute name="ALLIED_NUMBER" value="" constant="no"/>
-<attribute name="DESCRIPTION" value="USB/UART IC, w/USB Charge Detection FTDI Chip FT234XD-R, USB Controller, 3MBd, USB 1.1, USB 2.0, 5 V, 12-Pin DFN" constant="no"/>
-<attribute name="HEIGHT" value="0.75mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="FTDI Chip" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="FT234XD-R" constant="no"/>
-<attribute name="OTHER_PART_NUMBER" value="" constant="no"/>
-<attribute name="RS_PART_NUMBER" value="8888744" constant="no"/>
-<attribute name="SUPPLIER_NAME" value="RS" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1733,10 +1620,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <part name="LED2" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="LED" device="1608" package3d_urn="urn:adsk.eagle:package:1073651/2"/>
 <part name="LED3" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="LED" device="1608" package3d_urn="urn:adsk.eagle:package:1073651/2"/>
 <part name="LED1" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="LED" device="1608" package3d_urn="urn:adsk.eagle:package:1073651/2"/>
-<part name="R1" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="220"/>
-<part name="R3" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="220"/>
-<part name="R4" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="220"/>
-<part name="R2" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="220"/>
+<part name="R1" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="330"/>
+<part name="R3" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="330"/>
+<part name="R4" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="330"/>
+<part name="R2" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="330"/>
 <part name="SUPPLY2" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="GND" device=""/>
@@ -1766,8 +1653,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <part name="C6" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="C" device="1005" package3d_urn="urn:adsk.eagle:package:1073645/2" value="0.1u"/>
 <part name="+3V5" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="+3V3" device=""/>
 <part name="GND7" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="GND" device=""/>
-<part name="C7" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="C" device="1005" package3d_urn="urn:adsk.eagle:package:1073645/2" value="47p"/>
-<part name="C8" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="C" device="1005" package3d_urn="urn:adsk.eagle:package:1073645/2" value="47p"/>
 <part name="C10" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="C" device="1005" package3d_urn="urn:adsk.eagle:package:1073645/2" value="0.1u"/>
 <part name="+P5" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="+5V" device=""/>
 <part name="GND12" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="GND" device=""/>
@@ -1795,18 +1680,16 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <part name="GND24" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="GND" device=""/>
 <part name="C13" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="C" device="1005" package3d_urn="urn:adsk.eagle:package:1073645/2" value="0.1u"/>
 <part name="X1" library="FA238V" library_urn="urn:adsk.eagle:library:1218048" deviceset="FA238V" device="" package3d_urn="urn:adsk.eagle:package:1218051/4"/>
-<part name="C9" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="C" device="1005" package3d_urn="urn:adsk.eagle:package:1073645/2" value="0.1u"/>
-<part name="CN2" library="nonolith" library_urn="urn:adsk.eagle:library:1289076" deviceset="HEADER-1X13" device="" package3d_urn="urn:adsk.eagle:package:1289318/2"/>
-<part name="CN3" library="nonolith" library_urn="urn:adsk.eagle:library:1289076" deviceset="HEADER-1X13" device="" package3d_urn="urn:adsk.eagle:package:1289318/2"/>
 <part name="U2" library="TPD4S014DSQR" library_urn="urn:adsk.eagle:library:1437167" deviceset="TPD4S014DSQR" device="" package3d_urn="urn:adsk.eagle:package:1437170/3"/>
-<part name="U5" library="FT234XD-R" library_urn="urn:adsk.eagle:library:1437157" deviceset="FT234XD-R" device="" package3d_urn="urn:adsk.eagle:package:1437160/3"/>
-<part name="GND8" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="GND" device=""/>
-<part name="+P4" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="+5V" device=""/>
-<part name="GND9" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="GND" device=""/>
 <part name="R8" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="10k"/>
 <part name="R9" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="10k"/>
 <part name="GND10" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="GND" device=""/>
 <part name="GND11" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="GND" device=""/>
+<part name="R10" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="10k"/>
+<part name="+3V8" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="+3V3" device=""/>
+<part name="+3V11" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="+3V3" device=""/>
+<part name="CN2" library="nonolith" library_urn="urn:adsk.eagle:library:1289076" deviceset="HEADER1X14" device=""/>
+<part name="CN3" library="nonolith" library_urn="urn:adsk.eagle:library:1289076" deviceset="HEADER1X14" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1893,8 +1776,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <instance part="C6" gate="G$1" x="147.32" y="93.98"/>
 <instance part="+3V5" gate="G$1" x="132.08" y="106.68"/>
 <instance part="GND7" gate="1" x="132.08" y="83.82"/>
-<instance part="C7" gate="G$1" x="144.78" y="33.02"/>
-<instance part="C8" gate="G$1" x="200.66" y="25.4"/>
 <instance part="C10" gate="G$1" x="101.6" y="93.98"/>
 <instance part="+P5" gate="1" x="101.6" y="106.68"/>
 <instance part="GND12" gate="1" x="101.6" y="83.82"/>
@@ -1905,10 +1786,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <instance part="GND14" gate="1" x="104.14" y="132.08"/>
 <instance part="+3V7" gate="G$1" x="127" y="162.56"/>
 <instance part="+3V9" gate="G$1" x="40.64" y="165.1"/>
-<instance part="GND16" gate="1" x="172.72" y="73.66"/>
+<instance part="GND16" gate="1" x="172.72" y="71.12"/>
 <instance part="GND17" gate="1" x="177.8" y="120.65"/>
-<instance part="+3V10" gate="G$1" x="162.56" y="129.54"/>
-<instance part="+P6" gate="1" x="172.72" y="114.3"/>
+<instance part="+3V10" gate="G$1" x="160.02" y="160.02"/>
+<instance part="+P6" gate="1" x="172.72" y="116.84"/>
 <instance part="R6" gate="G$1" x="106.68" y="154.94" rot="R90"/>
 <instance part="+3V6" gate="G$1" x="106.68" y="162.56"/>
 <instance part="D1" gate="G$1" x="114.3" y="55.88" rot="R270"/>
@@ -1923,18 +1804,16 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <instance part="C13" gate="G$1" x="116.84" y="93.98"/>
 <instance part="X1" gate="B" x="294.64" y="53.34"/>
 <instance part="X1" gate="A" x="302.26" y="66.04"/>
-<instance part="C9" gate="G$1" x="193.04" y="25.4"/>
-<instance part="CN2" gate="G$1" x="185.42" y="142.24"/>
-<instance part="CN3" gate="G$1" x="185.42" y="93.98"/>
 <instance part="U2" gate="G$1" x="111.76" y="40.64" rot="MR0"/>
-<instance part="U5" gate="G$1" x="154.94" y="43.18"/>
-<instance part="GND8" gate="1" x="152.4" y="20.32"/>
-<instance part="+P4" gate="1" x="149.86" y="55.88"/>
-<instance part="GND9" gate="1" x="193.04" y="15.24"/>
 <instance part="R8" gate="G$1" x="114.3" y="22.86" rot="R90"/>
-<instance part="R9" gate="G$1" x="121.92" y="40.64" rot="R90"/>
+<instance part="R9" gate="G$1" x="121.92" y="48.26" rot="R90"/>
 <instance part="GND10" gate="1" x="55.88" y="12.7"/>
 <instance part="GND11" gate="1" x="114.3" y="12.7"/>
+<instance part="R10" gate="G$1" x="274.32" y="20.32" rot="R180"/>
+<instance part="+3V8" gate="G$1" x="121.92" y="68.58"/>
+<instance part="+3V11" gate="G$1" x="281.94" y="27.94"/>
+<instance part="CN2" gate="A" x="185.42" y="142.24"/>
+<instance part="CN3" gate="A" x="185.42" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -2100,34 +1979,13 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="177.8" y1="123.19" x2="177.8" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="157.48" x2="182.88" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="CN2" gate="G$1" pin="1"/>
+<pinref part="CN2" gate="A" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="172.72" y1="78.74" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="78.74" x2="172.72" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="78.74" x2="172.72" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="CN3" gate="G$1" pin="13"/>
-</segment>
-<segment>
-<pinref part="U5" gate="G$1" pin="GND"/>
-<wire x1="154.94" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="33.02" x2="152.4" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="152.4" y1="25.4" x2="152.4" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="30.48" x2="144.78" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="25.4" x2="152.4" y2="25.4" width="0.1524" layer="91"/>
-<junction x="152.4" y="25.4"/>
-</segment>
-<segment>
-<pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="22.86" x2="193.04" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="20.32" x2="193.04" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="22.86" x2="200.66" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="20.32" x2="193.04" y2="20.32" width="0.1524" layer="91"/>
-<junction x="193.04" y="20.32"/>
-<pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="CN3" gate="A" pin="14"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -2218,7 +2076,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="152.4" x2="165.1" y2="152.4" width="0.1524" layer="91"/>
 <label x="165.1" y="152.4" size="1.778" layer="95"/>
-<pinref part="CN2" gate="G$1" pin="3"/>
+<pinref part="CN2" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="PIO0_2" class="0">
@@ -2230,7 +2088,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="149.86" x2="165.1" y2="149.86" width="0.1524" layer="91"/>
 <label x="165.1" y="149.86" size="1.778" layer="95"/>
-<pinref part="CN2" gate="G$1" pin="4"/>
+<pinref part="CN2" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="PIO0_3" class="0">
@@ -2242,7 +2100,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="147.32" x2="165.1" y2="147.32" width="0.1524" layer="91"/>
 <label x="165.1" y="147.32" size="1.778" layer="95"/>
-<pinref part="CN2" gate="G$1" pin="5"/>
+<pinref part="CN2" gate="A" pin="5"/>
 </segment>
 </net>
 <net name="!ISP" class="0">
@@ -2250,11 +2108,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <pinref part="U1" gate="G$1" pin="PIO0_4/ADC0_4"/>
 <wire x1="210.82" y1="86.36" x2="201.93" y2="86.36" width="0.1524" layer="91"/>
 <label x="201.93" y="86.36" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="PIO0_16/ADC1_9"/>
-<wire x1="266.7" y1="25.4" x2="266.7" y2="15.24" width="0.1524" layer="91"/>
-<label x="266.7" y="15.24" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
@@ -2279,7 +2132,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="144.78" x2="165.1" y2="144.78" width="0.1524" layer="91"/>
 <label x="165.1" y="144.78" size="1.778" layer="95"/>
-<pinref part="CN2" gate="G$1" pin="6"/>
+<pinref part="CN2" gate="A" pin="6"/>
 </segment>
 </net>
 <net name="PIO0_6" class="0">
@@ -2291,7 +2144,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="142.24" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
 <label x="165.1" y="142.24" size="1.778" layer="95"/>
-<pinref part="CN2" gate="G$1" pin="7"/>
+<pinref part="CN2" gate="A" pin="7"/>
 </segment>
 </net>
 <net name="PIO0_7" class="0">
@@ -2303,7 +2156,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="139.7" x2="165.1" y2="139.7" width="0.1524" layer="91"/>
 <label x="165.1" y="139.7" size="1.778" layer="95"/>
-<pinref part="CN2" gate="G$1" pin="8"/>
+<pinref part="CN2" gate="A" pin="8"/>
 </segment>
 </net>
 <net name="PIO0_8" class="0">
@@ -2315,7 +2168,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="137.16" x2="165.1" y2="137.16" width="0.1524" layer="91"/>
 <label x="165.1" y="137.16" size="1.778" layer="95"/>
-<pinref part="CN2" gate="G$1" pin="9"/>
+<pinref part="CN2" gate="A" pin="9"/>
 </segment>
 </net>
 <net name="PIO0_9" class="0">
@@ -2327,7 +2180,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="134.62" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
 <label x="165.1" y="134.62" size="1.778" layer="95"/>
-<pinref part="CN2" gate="G$1" pin="10"/>
+<pinref part="CN2" gate="A" pin="10"/>
 </segment>
 </net>
 <net name="PIO0_12" class="0">
@@ -2339,7 +2192,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="132.08" x2="165.1" y2="132.08" width="0.1524" layer="91"/>
 <label x="165.1" y="132.08" size="1.778" layer="95"/>
-<pinref part="CN2" gate="G$1" pin="11"/>
+<pinref part="CN2" gate="A" pin="11"/>
 </segment>
 </net>
 <net name="PIO0_19" class="0">
@@ -2351,7 +2204,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="104.14" x2="165.1" y2="104.14" width="0.1524" layer="91"/>
 <label x="165.1" y="104.14" size="1.778" layer="95"/>
-<pinref part="CN3" gate="G$1" pin="3"/>
+<pinref part="CN3" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="PIO0_17" class="0">
@@ -2363,7 +2216,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="106.68" x2="165.1" y2="106.68" width="0.1524" layer="91"/>
 <label x="165.1" y="106.68" size="1.778" layer="95"/>
-<pinref part="CN3" gate="G$1" pin="2"/>
+<pinref part="CN3" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="PIO0_29" class="0">
@@ -2375,7 +2228,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <label x="165.1" y="81.28" size="1.778" layer="95"/>
 <wire x1="165.1" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="CN3" gate="G$1" pin="12"/>
+<pinref part="CN3" gate="A" pin="13"/>
 </segment>
 </net>
 <net name="PIO0_28" class="0">
@@ -2387,7 +2240,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="83.82" x2="165.1" y2="83.82" width="0.1524" layer="91"/>
 <label x="165.1" y="83.82" size="1.778" layer="95"/>
-<pinref part="CN3" gate="G$1" pin="11"/>
+<pinref part="CN3" gate="A" pin="12"/>
 </segment>
 </net>
 <net name="PIO0_27" class="0">
@@ -2399,7 +2252,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="86.36" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
 <label x="165.1" y="86.36" size="1.778" layer="95"/>
-<pinref part="CN3" gate="G$1" pin="10"/>
+<pinref part="CN3" gate="A" pin="11"/>
 </segment>
 </net>
 <net name="PIO0_26" class="0">
@@ -2411,7 +2264,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="88.9" x2="165.1" y2="88.9" width="0.1524" layer="91"/>
 <label x="165.1" y="88.9" size="1.778" layer="95"/>
-<pinref part="CN3" gate="G$1" pin="9"/>
+<pinref part="CN3" gate="A" pin="10"/>
 </segment>
 </net>
 <net name="PIO0_25" class="0">
@@ -2423,7 +2276,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="91.44" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
 <label x="165.1" y="91.44" size="1.778" layer="95"/>
-<pinref part="CN3" gate="G$1" pin="8"/>
+<pinref part="CN3" gate="A" pin="9"/>
 </segment>
 </net>
 <net name="PIO0_24" class="0">
@@ -2435,7 +2288,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="93.98" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
 <label x="165.1" y="93.98" size="1.778" layer="95"/>
-<pinref part="CN3" gate="G$1" pin="7"/>
+<pinref part="CN3" gate="A" pin="8"/>
 </segment>
 </net>
 <net name="PIO0_23" class="0">
@@ -2447,7 +2300,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="96.52" x2="165.1" y2="96.52" width="0.1524" layer="91"/>
 <label x="165.1" y="96.52" size="1.778" layer="95"/>
-<pinref part="CN3" gate="G$1" pin="6"/>
+<pinref part="CN3" gate="A" pin="7"/>
 </segment>
 </net>
 <net name="PIO0_22" class="0">
@@ -2459,7 +2312,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="99.06" x2="165.1" y2="99.06" width="0.1524" layer="91"/>
 <label x="165.1" y="99.06" size="1.778" layer="95"/>
-<pinref part="CN3" gate="G$1" pin="5"/>
+<pinref part="CN3" gate="A" pin="6"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -2479,12 +2332,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <pinref part="+P2" gate="1" pin="+5V"/>
 <pinref part="D1" gate="G$1" pin="K"/>
-<wire x1="114.3" y1="55.88" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="58.42" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="43.18" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="58.42" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
-<junction x="114.3" y="58.42"/>
+<wire x1="114.3" y1="55.88" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+P5" gate="1" pin="+5V"/>
@@ -2492,16 +2340,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <wire x1="101.6" y1="104.14" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="182.88" y1="109.22" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="111.76" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="+P6" gate="1" pin="+5V"/>
-<wire x1="172.72" y1="109.22" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="CN3" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="U5" gate="G$1" pin="VCC"/>
-<wire x1="154.94" y1="35.56" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="35.56" x2="149.86" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="+P4" gate="1" pin="+5V"/>
+<wire x1="172.72" y1="111.76" x2="172.72" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="CN3" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -2585,9 +2427,21 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="+3V8" gate="G$1" pin="+3V3"/>
+<wire x1="121.92" y1="50.8" x2="121.92" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="279.4" y1="20.32" x2="281.94" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="20.32" x2="281.94" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="+3V11" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="CN2" gate="A" pin="14"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
-<wire x1="182.88" y1="127" x2="162.56" y2="127" width="0.1524" layer="91"/>
-<pinref part="CN2" gate="G$1" pin="13"/>
+<wire x1="182.88" y1="124.46" x2="160.02" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="124.46" x2="160.02" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$56" class="0">
@@ -2604,18 +2458,14 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <label x="38.1" y="33.02" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="USBDM"/>
-<wire x1="154.94" y1="43.18" x2="144.78" y2="43.18" width="0.1524" layer="91"/>
-<label x="137.16" y="43.18" size="1.778" layer="95"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="43.18" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="38.1" x2="144.78" y2="43.18" width="0.1524" layer="91"/>
-<junction x="144.78" y="43.18"/>
-</segment>
-<segment>
 <pinref part="U2" gate="G$1" pin="D-"/>
 <wire x1="111.76" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
 <label x="129.54" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="USB_DM"/>
+<wire x1="294.64" y1="96.52" x2="304.8" y2="96.52" width="0.1524" layer="91"/>
+<label x="302.26" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D+" class="0">
@@ -2625,18 +2475,14 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <label x="38.1" y="30.48" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="USBDP"/>
-<wire x1="190.5" y1="40.64" x2="200.66" y2="40.64" width="0.1524" layer="91"/>
-<label x="203.2" y="40.64" size="1.778" layer="95"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="40.64" x2="205.74" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="40.64" x2="200.66" y2="30.48" width="0.1524" layer="91"/>
-<junction x="200.66" y="40.64"/>
-</segment>
-<segment>
 <pinref part="U2" gate="G$1" pin="D+"/>
 <wire x1="58.42" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
 <label x="43.18" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="USB_DP"/>
+<wire x1="294.64" y1="93.98" x2="304.8" y2="93.98" width="0.1524" layer="91"/>
+<label x="302.26" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VREF" class="0">
@@ -2660,28 +2506,16 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <label x="147.32" y="101.6" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="RX" class="0">
+<net name="PIO0_14" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PIO0_14/ADC1_7/SCT1_OUT5"/>
 <wire x1="261.62" y1="25.4" x2="261.62" y2="15.24" width="0.1524" layer="91"/>
 <label x="261.62" y="15.24" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="TXD"/>
-<wire x1="154.94" y1="27.94" x2="137.16" y2="27.94" width="0.1524" layer="91"/>
-<label x="137.16" y="27.94" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="TX" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PIO0_15/ADC1_8"/>
-<wire x1="264.16" y1="25.4" x2="264.16" y2="15.24" width="0.1524" layer="91"/>
-<label x="264.16" y="15.24" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="U5" gate="G$1" pin="RXD"/>
-<wire x1="190.5" y1="35.56" x2="205.74" y2="35.56" width="0.1524" layer="91"/>
-<label x="203.2" y="35.56" size="1.778" layer="95"/>
+<wire x1="182.88" y1="127" x2="165.1" y2="127" width="0.1524" layer="91"/>
+<pinref part="CN2" gate="A" pin="13"/>
+<label x="165.1" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!RESET" class="0">
@@ -2703,11 +2537,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <wire x1="124.46" y1="144.78" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
 <junction x="124.46" y="147.32"/>
 </segment>
-<segment>
-<pinref part="U5" gate="G$1" pin="!RESET"/>
-<wire x1="154.94" y1="40.64" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
-<label x="137.16" y="40.64" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="PIO0_13" class="0">
 <segment>
@@ -2718,7 +2547,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="129.54" x2="165.1" y2="129.54" width="0.1524" layer="91"/>
 <label x="165.1" y="129.54" size="1.778" layer="95"/>
-<pinref part="CN2" gate="G$1" pin="12"/>
+<pinref part="CN2" gate="A" pin="12"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2752,14 +2581,14 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <segment>
 <wire x1="182.88" y1="101.6" x2="165.1" y2="101.6" width="0.1524" layer="91"/>
 <label x="165.1" y="101.6" size="1.778" layer="95"/>
-<pinref part="CN3" gate="G$1" pin="4"/>
+<pinref part="CN3" gate="A" pin="5"/>
 </segment>
 </net>
 <net name="PIO0_0" class="0">
 <segment>
 <wire x1="182.88" y1="154.94" x2="165.1" y2="154.94" width="0.1524" layer="91"/>
 <label x="165.1" y="154.94" size="1.778" layer="95"/>
-<pinref part="CN2" gate="G$1" pin="2"/>
+<pinref part="CN2" gate="A" pin="2"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PIO0_0/ADC0_10/SCT0_OUT3"/>
@@ -2775,20 +2604,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <wire x1="114.3" y1="38.1" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="VCCIO"/>
-<wire x1="190.5" y1="33.02" x2="193.04" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="33.02" x2="193.04" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="50.8" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="50.8" x2="152.4" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="3.3VOUT"/>
-<wire x1="152.4" y1="38.1" x2="154.94" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="33.02" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
-<junction x="193.04" y="33.02"/>
-</segment>
-</net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="!EN"/>
@@ -2797,12 +2612,36 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/FT234XD-R.pdf
 <pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="!ACK" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="!ACK"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="33.02" x2="121.92" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="33.02" x2="121.92" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="33.02" x2="121.92" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="33.02" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
+<junction x="121.92" y="33.02"/>
+<label x="127" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PIO0_15/ADC1_8"/>
+<wire x1="264.16" y1="25.4" x2="264.16" y2="15.24" width="0.1524" layer="91"/>
+<label x="264.16" y="15.24" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="PIO0_16" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PIO0_16/ADC1_9"/>
+<wire x1="266.7" y1="25.4" x2="266.7" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="266.7" y1="20.32" x2="266.7" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="20.32" x2="266.7" y2="20.32" width="0.1524" layer="91"/>
+<junction x="266.7" y="20.32"/>
+<label x="266.7" y="15.24" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="182.88" y1="109.22" x2="165.1" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="CN3" gate="A" pin="2"/>
+<label x="165.1" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
